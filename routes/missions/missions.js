@@ -1,9 +1,10 @@
 const router=require('express').Router();
-const createMissionsRoute=require('./create-missions.js');
-const getMissions=require();
+const createMissionsRoute=require('./create-mission');
+const queryMission=require('./query');
+
 
 router.use('/create',createMissionsRoute);
-router.use('/query',getMissions);
+router.use('/query',queryMission);
 
 
 

@@ -18,8 +18,7 @@ const app= express();
 
 //REGISTER THE MIDDLE WARES
 app.use(bodyParser.json());
-app.use("/posts",postsRoute);
-
+app.use('/missions',missionsRoute);
 
 // ROUTES
 

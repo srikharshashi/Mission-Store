@@ -10,7 +10,7 @@ const MissionSchema=mongoose.Schema({
         required:true
         
     },
-    coords:{
+    waypoints:{
       type:String,
       required:true
     }
