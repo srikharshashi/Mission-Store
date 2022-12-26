@@ -1,6 +1,6 @@
 const router=require('express').Router();
 const createMissionsRoute=require('./create-mission');
-const queryMission=require('./query');
+const queryMission=require('./missionsQuery');
 
 
 router.use('/create',createMissionsRoute);
