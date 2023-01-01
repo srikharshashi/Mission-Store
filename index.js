@@ -49,4 +49,4 @@ app.ws('/status', function(ws, req) {
   });
 
 
-app.listen(4000,()=>console.log("Server listening on 4000"));
+app.listen(parseInt(process.env.PORT),()=>console.log("Server listening on 4000"));
