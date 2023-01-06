@@ -14,7 +14,7 @@ router.get('/all', async (req, res) => {
       });
     }
 
-    return res.json( missionList );
+    return res.json( mission );
   } catch (e) {
     console.log("Error in Mission Query " + e.toString());
     return res.status(500).json({ message: e.toString() });
