@@ -44,7 +44,6 @@ app.get("/",(req,res)=>{
 
 
 
-
 let phoneConnected=false;
 let droneConnected=false;
 let droneInFlight=true;
