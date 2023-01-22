@@ -11,7 +11,6 @@ router.post('/addall', async (req, res) => {
         return res.json(savedMission);
     } catch (e) {
         console.log("Error in Image Create " + e.toString());
-        return res.status(500).json({ message: e.toString() });
     }
 
 });

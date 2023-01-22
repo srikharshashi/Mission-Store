@@ -59,7 +59,7 @@ app.ws('/socket/command',(ws,req)=>{
 
   ws.on('message',(msg)=>{
           msg=JSON.parse(msg);
-          let {message,status}=msg;
+          let {message,status,id}=msg;
           
           if(message==="can_launch"){
               if(droneConnected && phoneConnected){
@@ -93,7 +93,7 @@ app.ws('/socket/command',(ws,req)=>{
                   let {waypoints}=msg;
                   expressWs.getWss().clients.forEach((client)=>{
                       if (client !== ws && client.readyState === WebSocket.OPEN) {
-                          client.send(JSON.stringify({command:"LAUNCH",waypoints}));
+                          client.send(JSON.stringify({command:"LAUNCH",waypoints,id}));
                         }
                   })
               }
