@@ -5,7 +5,7 @@ router.post('/',async (req,res)=>{
   const body=req.body;
 
 
-  if(!body["mission_id"] || !body["date"] || !body["time"])
+  if(!body["mission_id"] || !body["date"] )
       return res.status(400).json({message:"Bad Request Required Parameters Not found"});
 
   try{

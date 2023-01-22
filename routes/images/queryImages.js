@@ -19,7 +19,6 @@ router.get('/:id', async (req, res) => {
             return res.status(404).json({ message: "Image not found" });
         }
         return res.json(img);
-
     } catch (error) {
         console.log("Error in Image Query " + e.toString());
         return res.status(500).json({ message: e.toString() });

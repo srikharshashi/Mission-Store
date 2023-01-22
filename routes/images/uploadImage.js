@@ -4,7 +4,6 @@ const Mission = require('../../models/mission');
 
 router.post('/addall', async (req, res) => {
     const body = req.body;
-
     if (body.length == 0) return res.status(400).json({ message: "No parameters found" });
 
     try {

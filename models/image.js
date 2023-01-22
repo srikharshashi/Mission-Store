@@ -11,14 +11,6 @@ const ImageSchema=mongoose.Schema({
        type:String,
        required:true
     },
-    time:{
-        type:String,
-        required:true
-    },
-    status:{
-        type:Number,
-        required:true
-    },
     detect:{
         type:Number,
         required:true
@@ -26,12 +18,7 @@ const ImageSchema=mongoose.Schema({
     main_url:{
         type:String,
         required:true
-    },
-    thumb_url:{
-        type:String,
-        required:true
-    }
-    
+    },    
 });
 
 
