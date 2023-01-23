@@ -3,12 +3,13 @@ const express = require('express');
 const mongoose = require('mongoose');
 require('dotenv/config');
 const {WebSocket}= require('ws');
+let cors = require('cors')
 
 
 //CREATE THE APP AND WEBSOCKET SERVER
 const app= express();
 var expressWs = require('express-ws')(app);
-
+app.use(cors());
 
 
 
